@@ -227,7 +227,7 @@ export default function Home() {
           </p>
           <div className="flex items-center justify-center gap-6 mb-16">
             <a
-              href="phs.oliveirasi@gmail.com"
+              href="mailto:phs.oliveirasi@gmail.com"
               className="flex items-center gap-2 px-6 py-3 bg-gray-900 text-white hover:bg-gray-800 transition-colors"
             >
               <Mail size={18} />
