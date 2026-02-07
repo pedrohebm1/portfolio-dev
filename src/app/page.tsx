@@ -244,7 +244,7 @@ export default function Home() {
               <Github size={24} />
             </a>
             <a
-              href="https://linkedin.com"
+              href="https://linkedin.com/in/pedro-oliveira-3b8849234/"
               target="_blank"
               rel="noopener noreferrer"
               className="text-gray-400 hover:text-gray-900 transition-colors"
