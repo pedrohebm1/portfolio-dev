@@ -31,6 +31,8 @@ export default function Projects(props : Props) {
             </div>
             {project.link !== null && <a
               href={project.link}
+              target="_blank"
+              rel="noopener noreferrer"
               className="text-gray-400 hover:text-gray-900 transition-colors"
             >
               <ExternalLink size={20} />
