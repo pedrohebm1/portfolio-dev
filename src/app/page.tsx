@@ -94,7 +94,7 @@ export default function Home() {
           </button>
 
           <ul className="flex items-center gap-8">
-            {['home', 'sobre mim', 'projetos', 'habilidades', 'contatos'].map(item => (
+            {['home', 'sobre', 'projetos', 'skills', 'contatos'].map(item => (
               <li key={item}>
                 <button
                   onClick={() => scrollToSection(item)}
@@ -145,11 +145,11 @@ export default function Home() {
       </section>
 
       <section
-        id="sobre mim"
+        id="sobre"
         className="min-h-screen flex items-center justify-center px-6 py-20 bg-gray-50"
       >
         <div className="max-w-4xl w-full">
-          <h2 className="text-4xl md:text-5xl font-light mb-16">Sobre Mim</h2>
+          <h2 className="text-4xl md:text-5xl font-light mb-16">Sobre</h2>
 
           <div className="space-y-8">
             <div>
@@ -180,7 +180,7 @@ export default function Home() {
       </section>
 
       <section
-        id="habilidades"
+        id="skills"
         className="min-h-screen flex items-center justify-center px-6 py-20 bg-gray-50"
       >
         <div className="max-w-5xl w-full">
