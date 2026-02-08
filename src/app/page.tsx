@@ -163,24 +163,6 @@ export default function Home() {
                 Fora do código, mantenho interesse por jogos, exercícios físicos, música e séries.
               </p>
             </div>
-
-            <div className="grid md:grid-cols-2 gap-12 pt-8">
-              <div>
-                <h3 className="text-xl font-light mb-4 text-gray-900">Experiência</h3>
-                <p className="text-gray-600 leading-relaxed">
-                  Trabalhei em diversos projetos, desde aplicações empresariais até
-                  startups, sempre buscando entregar código limpo, testável e de fácil manutenção.
-                </p>
-              </div>
-
-              <div>
-                <h3 className="text-xl font-light mb-4 text-gray-900">Objetivo</h3>
-                <p className="text-gray-600 leading-relaxed">
-                  Continuar evoluindo como desenvolvedor, contribuir para projetos
-                  significativos e fazer parte de equipes que valorizam qualidade e inovação.
-                </p>
-              </div>
-            </div>
           </div>
         </div>
       </section>
