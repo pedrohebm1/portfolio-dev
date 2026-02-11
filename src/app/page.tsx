@@ -47,7 +47,7 @@ export default function Home() {
     {
       title: 'Levelex',
       description: 'Sistema de gerenciamento de tarefas diárias, com recompensas para incentivar a produtividade e o foco',
-      tech: ['React Native', 'Spring Boot', 'Java', 'PostgreSQL', 'AWS', 'ChatGPT', 'Tailwind'],
+      tech: ['React Native', 'Spring Boot', 'Java', 'PostgreSQL', 'AWS', 'OpenAI', 'Tailwind'],
       status: 'in-progress',
       link: null
     },
