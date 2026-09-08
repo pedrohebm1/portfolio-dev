@@ -55,7 +55,6 @@ export default function Navbar({ sections }: NavbarProps) {
                     Pedro
                 </button>
 
-                {/* Menu Desktop */}
                 <ul className="hidden md:flex items-center gap-8">
                     {sections.map((item) => (
                         <li key={item}>
@@ -72,7 +71,6 @@ export default function Navbar({ sections }: NavbarProps) {
                     ))}
                 </ul>
 
-                {/* Botão Hambúrguer / Fechar */}
                 <button
                     onClick={() => setIsOpen(!isOpen)}
                     className="md:hidden p-1 text-gray-700 hover:text-gray-900 focus:outline-none"
