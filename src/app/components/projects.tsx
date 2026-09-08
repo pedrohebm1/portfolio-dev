@@ -18,7 +18,7 @@ export default function Projects(props : Props) {
       {props.projects.map((project: Project, index: number) => (
         <div
           key={index}
-          className="border-b border-gray-100 pb-12 last:border-0"
+          className="pb-12 last:border-0"
         >
           <div className="flex items-start justify-between mb-4">
             <div className="flex items-center gap-3">
