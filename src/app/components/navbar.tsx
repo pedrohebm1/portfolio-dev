@@ -1,7 +1,7 @@
 "use client";
 
 import { useState, useEffect } from "react";
-import { Menu, Moon, Sun, X } from "lucide-react";
+import { Moon, Sun } from "lucide-react";
 import { motion, AnimatePresence } from "framer-motion";
 import { useTheme } from "next-themes";
 import {
@@ -10,7 +10,6 @@ import {
   DropdownMenuItem,
   DropdownMenuTrigger,
 } from "@/components/ui/dropdown-menu";
-import { Button } from "@base-ui/react";
 
 interface NavbarProps {
   sections: string[];
@@ -55,11 +54,11 @@ export default function Navbar({ sections }: NavbarProps) {
   };
 
   return (
-    <nav className="fixed top-0 left-0 right-0 z-50 backdrop-blur-sm border-b border-gray-100">
+    <nav className="fixed top-0 left-0 right-0 z-50 backdrop-blur-sm border-b border-secondary px-10 md:px-0">
       <div className="max-w-5xl mx-auto px-4 sm:px-6 py-4 flex items-center justify-between">
         <button
           onClick={() => scrollToSection("home")}
-          className="text-lg font-medium"
+          className="text-lg text-primary font-medium"
         >
           Pedro
         </button>
@@ -71,8 +70,8 @@ export default function Navbar({ sections }: NavbarProps) {
                 onClick={() => scrollToSection(item)}
                 className={`text-sm capitalize transition-colors ${
                   activeSection === item
-                    ? "text-gray-900 font-semibold"
-                    : "text-gray-500 hover:text-gray-900"
+                    ? "text-primary font-semibold"
+                    : "text-primary hover:text-muted-foreground"
                 }`}
               >
                 {item}
@@ -85,7 +84,7 @@ export default function Navbar({ sections }: NavbarProps) {
         <DropdownMenu>
           <DropdownMenuTrigger>
             <Sun className="absolute h-[1.2rem] w-[1.2rem] scale-100 rotate-0 transition-all dark:scale-0 dark:-rotate-90" />
-            <Moon className=" h-[1.2rem] w-[1.2rem] scale-0 rotate-90 transition-all dark:scale-100 dark:rotate-0" />
+            <Moon className=" h-[1.2rem] fill-primary w-[1.2rem] scale-0 rotate-90 transition-all dark:scale-100 dark:rotate-0" />
           </DropdownMenuTrigger>
           <DropdownMenuContent align="end">
             <DropdownMenuItem onClick={() => setTheme("light")}>
