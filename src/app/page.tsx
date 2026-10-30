@@ -57,7 +57,7 @@ export default function Home() {
     "Tailwind CSS",
   ];
   const links: Links = {
-    github: "https://www.linkedin.com/in/pedrohe-oliveira/",
+    github: "https://github.com/pedrohebm1",
     linkedin: "https://www.linkedin.com/in/pedrohe-oliveira/",
     email: "phs.oliveirasi@gmail.com"
   };
