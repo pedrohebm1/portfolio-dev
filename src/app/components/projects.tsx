@@ -70,7 +70,7 @@ export default function Projects(props: Props) {
 
           </div>
 
-          <DialogContent className="sm:max-w-150">
+          <DialogContent className="sm:max-w-150 p-8">
             <DialogHeader>
               <div className="flex items-center gap-3 mb-2">
                 <DialogTitle className="text-2xl">{project.title}</DialogTitle>
@@ -85,7 +85,7 @@ export default function Projects(props: Props) {
               </DialogDescription>
             </DialogHeader>
 
-            <div className="py-4 space-y-4">
+            <div className="py-4 space-y-4 px-4">
               <div>
                 <h4 className="text-sm font-semibold mb-2 text-muted-foreground uppercase tracking-wider">
                   Tecnologias utilizadas
@@ -103,7 +103,7 @@ export default function Projects(props: Props) {
               </div>
 
               {project.link !== null && (
-                <div className="pt-4 border-t flex justify-end">
+                <div className="pt-4 flex justify-end">
                   <Button variant="default">
                     <a
                       href={project.link}
