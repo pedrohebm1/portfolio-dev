@@ -58,7 +58,7 @@ export default function Navbar({ sections }: NavbarProps) {
       <div className="max-w-5xl mx-auto px-4 sm:px-6 py-4 flex items-center justify-between">
         <button
           onClick={() => scrollToSection("home")}
-          className="text-lg text-primary font-medium"
+          className="text-lg text-primary font-medium cursor-pointer"
         >
           Pedro
         </button>
@@ -68,7 +68,7 @@ export default function Navbar({ sections }: NavbarProps) {
             <li key={item}>
               <button
                 onClick={() => scrollToSection(item)}
-                className={`text-sm capitalize transition-colors ${
+                className={`text-sm capitalize transition-colors cursor-pointer ${
                   activeSection === item
                     ? "text-primary font-semibold"
                     : "text-primary hover:text-muted-foreground"
@@ -82,18 +82,18 @@ export default function Navbar({ sections }: NavbarProps) {
 
         
         <DropdownMenu>
-          <DropdownMenuTrigger>
+          <DropdownMenuTrigger className="cursor-pointer">
             <Sun className="absolute h-[1.2rem] w-[1.2rem] scale-100 rotate-0 transition-all dark:scale-0 dark:-rotate-90" />
             <Moon className=" h-[1.2rem] fill-primary w-[1.2rem] scale-0 rotate-90 transition-all dark:scale-100 dark:rotate-0" />
           </DropdownMenuTrigger>
           <DropdownMenuContent align="end">
-            <DropdownMenuItem onClick={() => setTheme("light")}>
+            <DropdownMenuItem className="cursor-pointer" onClick={() => setTheme("light")}>
               Light
             </DropdownMenuItem>
-            <DropdownMenuItem onClick={() => setTheme("dark")}>
+            <DropdownMenuItem className="cursor-pointer" onClick={() => setTheme("dark")}>
               Dark
             </DropdownMenuItem>
-            <DropdownMenuItem onClick={() => setTheme("system")}>
+            <DropdownMenuItem className="cursor-pointer" onClick={() => setTheme("system")}>
               System
             </DropdownMenuItem>
           </DropdownMenuContent>
