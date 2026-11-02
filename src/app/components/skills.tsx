@@ -15,11 +15,9 @@ export default function Skills(props: Props) {
     <h2 className="text-4xl md:text-5xl font-light mb-12 md:mb-16 text-primary text-center md:text-left">
       Habilidades técnicas
     </h2>
-    
-    {/* Ajuste principal: de items-center para items-stretch para igualar as alturas */}
+
     <div className="flex flex-col md:flex-row gap-6 justify-center items-stretch">
-      
-      {/* Cartão 1 - Uso do flex-1 para dividir o espaço igualmente em telas grandes */}
+
       <div className="flex-1 flex flex-col p-6 rounded-2xl border bg-primary-foreground w-full">
         <div className="flex items-center gap-3 mb-3">
           <Terminal className="w-6 h-6 text-primary shrink-0" />
@@ -45,7 +43,6 @@ export default function Skills(props: Props) {
         </div>
       </div>
 
-      {/* Cartão 2 - Estrutura idêntica ao primeiro */}
       <div className="flex-1 flex flex-col p-6 rounded-2xl border bg-primary-foreground w-full">
         <div className="flex items-center gap-3 mb-3">
           <Monitor className="w-6 h-6 text-primary shrink-0" />
